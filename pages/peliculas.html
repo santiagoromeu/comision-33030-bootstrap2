@@ -2,73 +2,112 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <!-- Mi CSS -->
-    <link href="../css/style.css" rel="stylesheet">
-    <title>PELICULAS - Desafio Bootstrap</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <!-- Mi CSS -->
+  <link href="../css/style.css" rel="stylesheet">
+  <title>PELICULAS - Desafio Bootstrap</title>
 </head>
 
 <body>
-    <div class=" cuerpo">
-        <header>
-            <nav class=" navbar navbar-expand-lg bground">
-              <div class="container-fluid">
-                <a class="navbar-brand" href="../index.html">INICIO</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                      <a class="nav-link" href="./peliculas.html">PELICULAS</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./series.html">SERIES</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./faq.html">FAQ</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="./contacto.html">CONTACTO</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </nav>
-          </header>
-        <div class="container m-4 intro">
-            <h1>STREAM SELECTOR</h1>
-            <p class="row text-black">Elige tus servicios de preferencia y escribenos para dejarnos tu opinión. </p>
-        </div>
+  <div class="cuerpo">
 
-        <div class="container mt-4 mb-4">
-            <div class="mb-3">
-                <label for="exampleFormControlInput1" class="form-label">Correo electronico</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@email.com">
-            </div>
-            <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Envíanos tus comentarios</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
-                    placeholder="Escribe aquí tus comentarios u opinión"></textarea>
-            </div>
-        </div>
-        <footer class="footer bground">
-            <ul>
-                <li><a href="https://www.facebook.com" target="_blank">FACEBOOK</a></li>
-                <li><a href="https://www.instagram.com" target="_blank">INSTAGRAM</a></li>
-                <li><a href="https://www.twitter.com" target="_blank">TWITTER</a></li>
+    <!--Barra de navegación-->
+    <header>
+      <nav class=" navbar navbar-expand-lg bground">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">INICIO</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./peliculas.html">PELICULAS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./series.html">SERIES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./faq.html">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">CONTACTO</a>
+              </li>
             </ul>
-        </footer>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--Contenedor titulo principal-->
+    <div class="container-fluid m-4 intro">
+      <h1>STREAM SELECTOR</h1>
+      <p class="row text-black">Aqui te contamos las peliculas recomendadas!</p>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
-        crossorigin="anonymous"></script>
+
+    <!--Div contenedor de peliculas recomendadas-->
+    <div class="container">
+      <div class="row pelis rmargin">
+        <div class="card p-3 col-sm-4 col-md-8" style="width: 18rem;">
+          <img src="../img/netflix.png" class="card-img-top" alt="netflix">
+          <div class="card-body">
+            <p class="card-text">HUSTLE: Adam Sandler es un cazatalentos de basquetbol que ha tenido muy mala suerte con
+              su carrera. El cazatalentos descubre a un jugador excepcional, un atleta español que tiene habilidades
+              extraordinarias y que puede convertirse en su oportunidad para llegar nuevamente a los puntos más altos de
+              la NBA.</p>
+          </div>
+        </div>
+        <section class="col-sm-8 col-md-6"><iframe width="560" height="315"
+            src="https://www.youtube.com/embed/nM4iy0reaCA" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe></section>
+      </div>
+      <div class="row pelis rmargin">
+        <div class="card p-3 col-sm-4 col-md-8" style="width: 18rem;">
+          <img src="../img/star.png" class="card-img-top" alt="star-plus">
+          <div class="card-body">
+            <p class="card-text">ALTA FIDELIDAD: Rob Gordon es el dueño de una tienda de discos de Chicago al borde del
+              cierre. Rob Gordon es un verdadero fanático de la música. Pero el negocio de Rob no es lo único que está
+              haciendo aguas en su vida.</p>
+          </div>
+        </div>
+        <section class="col-sm-8 col-md-6 videocont"><iframe width="560" height="315"
+            src="https://www.youtube.com/embed/OA9gPtWDiww" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe></section>
+      </div>
+      <div class="row pelis rmargin">
+        <div class="card p-3 col-sm-4 col-md-8" style="width: 18rem;">
+          <img src="../img/mubi.png" class="card-img-top" alt="mubi">
+          <div class="card-body">
+            <p class="card-text">LO & BEHOLD: El documental de Werner Herzog plantea sus peculiares preguntas sobre el
+              humano, mientras se pasea por distintos hitos tecnológicos del internet en nuestras vida.</p>
+          </div>
+        </div>
+        <section class="col-sm-8 col-md-6 videocont"><iframe width="560" height="315"
+            src="https://www.youtube.com/embed/Zc1tZ8JsZvg" title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe></section>
+      </div>
+    </div>
+    <footer class="footer bground">
+      <ul>
+        <li><a href="https://www.facebook.com" target="_blank">FACEBOOK</a></li>
+        <li><a href="https://www.instagram.com" target="_blank">INSTAGRAM</a></li>
+        <li><a href="https://www.twitter.com" target="_blank">TWITTER</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

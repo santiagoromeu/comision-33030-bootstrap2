@@ -1,64 +1,81 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
 
-.row {
-justify-content: space-evenly;
-margin: 10px 10px 10px 10px;
-}
-
+/*Clase para el div despues de la etiqueta Body*/
 .cuerpo {
   background-color: rgb(230, 230, 230);
-  padding: 10px;;
+  padding: 10px;
 }
 
+/*Clase para el primer div contenedor del titulo*/
 .intro {
-display: flex;
-flex-direction: column;
-align-content: stretch;
-align-items: center;
-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  align-items: center;
+  width: 100%;
 }
 
+/*Color de fondo para nav y footer*/
 .bground {
   background-color: darkgrey;
+  border-radius: 10px;
 }
 
- .principal{
-   display: flex;
-   width: 500px;
-   height: 500px;
-   margin: 100px;
- }
+/*Margenes de videos en pelis*/
+.videocont {
+  margin: 10px;
+}
 
- /*.imgsize{
-   width: 300px;
-   height: 300px;
- }
- .imgtext{
-   background-color: rgb(187, 183, 183);
-   padding: 10px;
- }*/
+/*Seteo de divs de pelis*/
+.pelis {
+  padding: 10px;
+  background-color: rgb(173, 173, 173);
+  border-radius: 10px;
+  align-items: center;
+}
 
+/*Seteo de tamaño de imagen en series*/
+.imgseries {
+  width: 500px;
+  height: 600px;
+}
 
- .footer {
+/*Div contenedor principal de FAQ*/
+.contfaq {
+  background-color: rgb(173, 173, 173);
+  border-radius: 10px;
+}
+
+/*Margenes para ROW sin modificar la clase de Bootstrap*/
+.rmargin {
+  justify-content: space-evenly;
+  margin: 10px 10px 10px 10px;
+}
+
+/*Clases para el contenido de footer*/
+.footer {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
-  margin-top: 10px;
- }
- .footer ul {
+  margin-top: 50px;
+}
+
+.footer ul {
   display: flex;
   margin: 5px;
   justify-content: space-evenly;
- }
- .footer ul li{
+}
+
+.footer ul li {
   display: flex;
   margin: 22px;
- }
- .footer a{
+}
+
+.footer a {
   text-decoration: none;
   color: black;
- }
+}
